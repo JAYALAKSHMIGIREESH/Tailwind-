@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind css</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    </style>
+    
+</head>
+
+<body class="font-sans">
+    <nav class="bg-gray-900  py-2.5 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+            <a href="#" class="flex items-center">
+                <img src="./images/logo.png" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+            <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 pl-3 pr-4 text-white bg-blue-600 rounded lg:bg-transparent lg:text-blue-600  lg:p-0 dark:text-white"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services"
+                            class="block py-2 pl-3 pr-4 text-white border-b  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio"
+                            class="block py-2 pl-3 pr-4 text-white border-b  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial"
+                            class="block py-2 pl-3 pr-4 text-white border-b  hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Testimonial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-0" id="home">
+        <!-- Hero Section -->
+        <section class="relative bg-gradient-to-br from-blue-900 to-indigo-800 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url(https://img.freepik.com/free-vector/modern-techno-background_1048-11782.jpg);">
+            </div>
+
+            <div class="container mx-auto px-4 py-24 md:py-32 relative z-10">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div data-aos="fade-down" data-aos-easing="linear"
+                    data-aos-duration="1500" class="w-full md:w-1/2 mb-12 md:mb-0">
+                        <h1 class="text-6xl md:text-3xl font-bold mb-6 leading-tight items-center">
+                            Delivering Superior Services
+                        </h1>
+                        <h1 class="text-6xl md:text-6xl text-blue-600 font-bold mt-0  mb-6 leading-tight items-center">
+                            IT Solutions
+                        </h1>
+                        <p class="text-xl mb-8 text-gray-300">You can easily change any design to your own. It is also
+                            highly customizable SEO friendly template.</p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                            <a href="#"
+                                class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 text-center">Get
+                                Started</a>
+                            <a href="#"
+                                class="border-2 border-white text-white font-semibold px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 text-center">Learn
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0">
+                <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </section>
+    </main>
+    <section id="services" aria-label="What our customers are saying" class="bg-slate-50 py-20 sm:py-32">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="services">
+            <div  class="mx-auto max-w-2xl md:text-center">
+                <h2  data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" class="font-display text-4xl  text-center mb-8 tracking-tight text-slate-900 sm:text-4xl "  > Our Customers Services</h2>
+            </div>
+            <ul role="list"
+                class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                        class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                        <i class="fa-regular fa-lightbulb text-white w-5 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="h-10 w-10 text-white transition-all ">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </i>
+                                      
+                                    </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                    class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                    <i class="fa-regular fa-heart text-white w-2/5 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="h-10 w-10 text-white transition-all ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </i>
+                                  
+                                </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                    class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                    <i class="fa-solid fa-cloud text-white w-2/4 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="h-10 w-10 text-white transition-all ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </i>
+                                  
+                                </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul role="list"
+                class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                        class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                        <i class="fa-regular fa-lightbulb text-white w-5 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor"
+                                        class="h-10 w-10 text-white transition-all ">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                    </i>
+                                      
+                                    </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                    class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                    <i class="fa-regular fa-heart text-white w-2/5 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="h-10 w-10 text-white transition-all ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </i>
+                                  
+                                </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul role="list" class="flex flex-col gap-y-6 sm:gap-y-8">
+                        <li>
+                            <div
+                                class="group relative cursor-pointer overflow-hidden bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                                <span
+                                    class="absolute top-10 z-0 h-20 w-20 rounded-full bg-blue-600 transition-all duration-300 group-hover:scale-[10]"></span>
+                                <div class="relative z-10  max-w-md">
+                                    <span 
+                                    class="grid h-20 w-20 place-items-center rounded-full bg-blue-600transition-all duration-300 group-hover:bg-blue-600">
+                                    <i class="fa-solid fa-cloud text-white w-2/4 text-3xl"  fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="h-10 w-10 text-white transition-all ">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </i>
+                                  
+                                </span>
+                                    <div
+                                        class="space-y-6 pt-5 text-base leading-7 text-gray-600 transition-all duration-300 group-hover:text-white/90">
+                                        <p>Perfect for learning how the framework works, prototyping a new idea, or
+                                            creating a demo to share
+                                            online.</p>
+                                    </div>
+                                    <div class="pt-5 text-base font-semibold leading-7">
+                                        <p>
+                                            <a href="#"
+                                                class="text-blue-600 transition-all duration-300 group-hover:text-white">Read
+                                                the docs
+                                                &rarr;
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+           
+           
+        </div>
+    </section>
+    <div class="bg-slate-50" id="portfolio">
+    <div class="container mx-auto px-4 py-8 bg-slate-50">
+        <h1  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500" class="text-4xl  text-center mb-8">Bento Grid Layout with Images</h1>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+           
+            <div class="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg group">
+                <img src="https://zrtechsolutions.com/demo/html/technoit/assets/images/portfolio/product-1.jpg" alt="Nature" class="w-full h-full object-cover">
+                <div
+                    class="absolute inset-0 bg-blue-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                <img src="https://zrtechsolutions.com/demo/html/technoit/assets/images/portfolio/product-2.jpg" alt="" class="w-full h-48 object-cover">
+                <div
+                    class="absolute inset-0 bg-blue-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                <img src="https://zrtechsolutions.com/demo/html/technoit/assets/images/portfolio/product-3.jpg" alt="" class="w-full h-48 object-cover">
+                <div
+                    class="absolute inset-0 bg-blue-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                <img src="https://zrtechsolutions.com/demo/html/technoit/assets/images/portfolio/product-4.jpg" alt="" class="w-full h-48 object-cover">
+                <div
+                    class="absolute inset-0 bg-blue-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-2xl shadow-lg group">
+                <img src="https://zrtechsolutions.com/demo/html/technoit/assets/images/portfolio/product-5.jpg" alt="" class="w-full h-48 object-cover">
+                <div
+                    class="absolute inset-0 bg-blue-600 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="py-5 dark:bg-gray-900" id="testimonial">
+    <div  data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500" class="container flex flex-col items-center justify-center w-full p-6 mx-auto text-center xl:px-0">
+        <h2 class="max-w-2xl mt-3  leading-snug tracking-tight  lg:leading-tight text-slate-900 sm:text-4xl">Here's what our customers said</h2>
+        <p class="max-w-2xl py-4 text-base leading-normal text-gray-500 lg:text-lg xl:text-xl dark:text-gray-300">Testimonials is a great way to increase brand trust and awareness. Use this section to highlight your popular customers.</p>
+    </div>
+    <div class="container p-6 mx-auto mb-10 xl:px-0">
+        <div class="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+            <div class="">
+                <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                    <p class="text-base leading-normal dark:text-gray-300">Make sure you only pick the <mark class="mx-1  text-blue-600 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">right sentence</mark> to keep it short and simple.</p>
+                    <div class="flex items-center mt-8 space-x-3">
+                        <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                            <img alt="Avatar" src="https://zrtechsolutions.com/demo/html/technoit/assets/images/testimonials/testimonial-1.jpg" loading="lazy" />
+                        </div>
+                        <div>
+                            <div class="text-lg font-medium text-blue-600">Jhone Doe</div>
+                            <div class="text-gray-600 dark:text-gray-400">CFO </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                    <p class="text-base leading-normal dark:text-gray-300">This is an <mark class="mx-1  text-blue-600 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">awesome</mark> landing page template I've seen. I would use this for anything.</p>
+                    <div class="flex items-center mt-8 space-x-3">
+                        <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                            <img alt="Avatar" src="https://zrtechsolutions.com/demo/html/technoit/assets/images/testimonials/testimonial-2.jpg" />
+                        </div>
+                        <div>
+                            <div class="text-lg font-medium  text-blue-600">Afa Rose</div>
+                            <div class="text-gray-600 dark:text-gray-400">Web Designer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-6 mx-auto mb-10 xl:px-0">
+        <div class="grid gap-10 lg:grid-cols-2 xl:grid-cols-3">
+            <div class="">
+                <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                    <p class="text-base leading-normal dark:text-gray-300">Make sure you only pick the <mark class="mx-1  text-blue-600 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">right sentence</mark> to keep it short and simple.</p>
+                    <div class="flex items-center mt-8 space-x-3">
+                        <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                            <img alt="Avatar" src="https://zrtechsolutions.com/demo/html/technoit/assets/images/testimonials/testimonial-3.jpg" />
+                        </div>
+                        <div>
+                            <div class="text-lg font-medium  text-blue-600">Keena Lara</div>
+                            <div class="text-gray-600 dark:text-gray-400">Store Owner </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="flex flex-col justify-between w-full h-full px-6 py-6 bg-gray-100 dark:bg-gray-800 md:px-14 rounded-2xl md:py-14 dark:bg-trueGray-800">
+                    <p class="text-base leading-normal dark:text-gray-300">This is an <mark class="mx-1  text-blue-600 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">awesome</mark> landing page template I've seen. I would use this for anything.</p>
+                    <div class="flex items-center mt-8 space-x-3">
+                        <div class="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+                            <img alt="Avatar" src="https://zrtechsolutions.com/demo/html/technoit/assets/images/testimonials/testimonial-4.jpg" />
+                        </div>
+                        <div>
+                            <div class="text-lg font-medium  text-blue-600">Fizzi Brandon</div>
+                            <div class="text-gray-600 dark:text-gray-400">Freelancer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="w-full bg-gray-900">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="py-16 flex justify-between items-center flex-col gap-8 lg:flex-row">
+            <a href=""  class="flex justify-center ">
+                <img class="w-32   mb-4 lg:mb-0 hover:cursor-pointer" src="./images/logo.png" alt="">
+                    
+            </a>
+            <ul class="text-lg text-center sm:flex items-cente justify-center gap-14 lg:gap-10 xl:gap-14 transition-all duration-500">
+                <li ><a href=""  class="text-white hover:text-blue-600">About</a></li>
+                <li class="" ><a href=""  class="text-white hover:text-blue-600">News</a></li>
+                <li ><a href=""  class="text-white hover:text-blue-600">Contact</a></li>
+                <li  class=""><a href=""  class="text-white hover:text-blue-600">Blog</a></li>
+                <li ><a href=""  class="text-white hover:text-blue-600">Support</a></li>
+            </ul>
+            <div class="flex  space-x-4 sm:justify-center  ">
+                <a href=""  class="w-9 h-9 rounded-full bg-blue-600 flex justify-center items-center">
+                    <i class="fa-brands fa-whatsapp text-white "></i>
+                        
+                </a>
+                <a href=""  class="w-9 h-9 rounded-full bg-blue-600 flex justify-center items-center ">
+                    <i class="fa-brands fa-instagram text-white"></i>
+                </a>
+                <a href=""  class="w-9 h-9 rounded-full bg-blue-600 flex justify-center items-center ">
+                    <i class="fa-brands fa-linkedin-in text-white"></i>
+                </a>
+                <a href=""  class="w-9 h-9 rounded-full bg-blue-600 flex justify-center items-center ">
+                    <i class="fa-brands fa-youtube text-white"></i>
+                </a>
+            </div>
+        </div>
+        <div class="py-7 border-t border-gray-700">
+            <div class="flex items-center justify-center">
+                <span class="text-gray-400 ">©<a href="">technoit</a>2024, All rights reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+</html>
